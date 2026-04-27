@@ -1,6 +1,5 @@
 use clap::{Parser, Subcommand};
-use passgen::{generate_passphrase, generate_pin, generate_random, validate_strength};
-
+use week14::{generate_passphrase, generate_pin, generate_random, validate_strength};
 #[derive(Parser)]
 #[command(name = "passgen")]
 #[command(about = "A secure password generator and validator", long_about = None)]
